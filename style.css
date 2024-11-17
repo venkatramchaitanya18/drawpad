@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.tool-img{
+    height: 3rem;
+}
+
+.toolbar-options{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #ececec;
+    gap: 1rem;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;    
+}
+
+.sticky{
+    
+    
+}
+.nav{
+    border: 1px solid black;
+    height: 20%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    
+}
+.textarea{
+    height: 80%;
+    width: 100%;
+    border: 1px solid grey;
+}
+.close,.minimize{
+    cursor: pointer;
+}
+
+.input-tag{
+    display: none;
+}
+
+
+.upload-img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 420px;
+    margin: 2px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.color-box.active {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #000;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div id="colorPalette" >
+            <div class="color-box" style="background-color: #000000;" data-color="#000000"></div>
+            <div class="color-box" style="background-color: #ff0000;" data-color="#ff0000"></div>
+            <div class="color-box" style="background-color: #00ff00;" data-color="#00ff00"></div>
+            <div class="color-box" style="background-color: #0000ff;" data-color="#0000ff"></div>
+            <div class="color-box" style="background-color: #ffff00;" data-color="#ffff00"></div>
+            <div class="color-box" style="background-color: #ff00ff;" data-color="#ff00ff"></div>
+            <div class="color-box" style="background-color: #00ffff;" data-color="#00ffff"></div>
+            <div class="color-box" style="background-color: #ffffff;" data-color="#ffffff"></div>
+        </div>
+            <div class="toolbar-options">
+                
+                <div class="tool" id="pencil">
+                    
+                    <select id="sizeSelector">
+                        <option value="2">2px</option>
+                        <option value="4">4px</option>
+                        <option value="6">6px</option>
+                        <option value="8">8px</option>
+                    </select>
+                    <img src="./NewIcons/Black_Pencil.svg " class="tool-img">
+                </div>
+                <div class="tool" id="eraser">
+                    <img src="./NewIcons/Eraser.svg" class="tool-img">
+                </div>
+                <div class="tool" id="sticky">
+                    <img src="./NewIcons/StickyNote.svg" class="tool-img">
+                </div>
+                <div class="tool" id="upload">
+                    <img src="./NewIcons/Photo.svg" class="tool-img">
+                    
+                </div>
+                <div class="tool" id="download">
+                    <img src="./NewIcons/Download.svg" class="tool-img">
+                </div>
+                <div class="tool" id="undo">
+                    <img src="./NewIcons/Undo.svg" class="tool-img">
+                </div>
+                <div class="tool" id="redo">
+                    <img src="./NewIcons/Redo.svg" class="tool-img">
+                </div>
+                <input type="file" class="input-tag" id="download" >
+            
+        </div>
+    </div>
+
+
+    
+
+    <canvas id="board"></canvas>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="tool.js"></script>
